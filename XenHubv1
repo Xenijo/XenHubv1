@@ -1,0 +1,113 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("XenHubv1 (Beta)", "BloodTheme")
+
+local Tab = Window:NewTab("AutoFarm")
+
+local Section = Tab:NewSection("AutoFarm")
+
+Section:NewButton("AutoFarm(can't stop)", "Very Beta AutoFarm", function()
+
+local test = 1
+
+
+while test < 5 do 
+   wait()
+   local args = {
+    [1] = {
+        [1] = "PickupShoe",
+        [2] = "Starter",
+        [3] = nil --[[Vector3]],
+        [4] = "Soccer Shoes"
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+   
+end
+
+end)
+
+
+Section:NewButton("AutoSell(Can't stop)", "Only Work on the sell place", function()
+   
+   local test2 = 1
+
+
+while test2 < 5 do 
+   wait()
+   
+   local args = {
+    [1] = {
+        [1] = "Screen",
+        [2] = workspace.SellPlaces.Starter
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.Click:FireServer(unpack(args))
+   
+   end
+
+end)
+
+Section:NewButton("AutoFarmWorld2(can't stop)", "Very Beta AutoFarm", function()
+  local test3 = 1
+
+
+while test3 < 5 do 
+   wait()
+   local args = {
+    [1] = {
+        [1] = "PickupShoe",
+        [2] = "Futuristic",
+        [3] = nil --[[Vector3]],
+        [4] = "Soccer Shoes3"
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+   
+   end
+
+
+
+end)
+
+Section:NewButton("AutoSellWorld2(Can't stop)", "Only Work on the sell place", function()
+   local test3 = 1
+
+
+while test3 < 5 do 
+   wait()
+
+local args = {
+    [1] = {
+        [1] = "Screen",
+        [2] = workspace.SellPlaces.Futuristic
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.Click:FireServer(unpack(args))
+end
+end)
+
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+  
+
+
+end
+
+ 
+    
+end)
+
+Section:NewKeybind("KeyBind:E", "Binding You ui", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Misc")
+
+local Section = Tab:NewSection("Section Name")
+
+
