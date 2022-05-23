@@ -1,0 +1,57 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+_G.Farm = false
+
+local Window = Library.CreateLib("Xenijos Autoability spammer", "Ocean")
+
+local Tab = Window:NewTab("TabName")
+
+local Section = Tab:NewSection("Section Name")
+
+Section:NewToggle("AutoAbility", "ToggleInfo", function(state)
+    if state then
+        _G.Farm = true 
+        while _G.Farm == true do 
+
+            wait(5)
+        local ohString1 = "Plate1"  
+        local ohString2 = "Plate2"
+        local ohString3 = "Plate3"
+        local ohString4 = "Plate4" 
+        local ohString5 = "Plate5"
+        local ohString6 = "Plate6"
+        
+        
+        
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString1)
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString2)
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString3)
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString4)
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString5)
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.UltRequestFromClient:FireServer(ohString6)
+        end
+    else
+  
+        _G.Farm = false 
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
